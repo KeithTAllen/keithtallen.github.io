@@ -29,16 +29,22 @@
     <div class="block"> 
 	    <h2>Current Projects</h2>
         <div class="zblock">
-	        <h2>Concurrent Lambda Calculus for MPI | University at Buffalo</h2>
-            The Message Passing Interface (MPI), used in high performance computing, is typically implemented in imperative languages such as C, C++, or Fortran. 
-            This makes the verification of programs written in specific MPI implementations difficult. 
-            I am working with <a href="https://akhirsch.science/" target= _blank>Dr. Andrew Hirsch</a> to develop a concurrent lambda calculus to capture the message passing capabilities of MPI. 
-            We then plan to use the language to verify common algorithms in MPI programs. 
-            We are currently focused on adding features needed for useful MPI programming, while keeping the language slim and manageable.
+	        <h2>Chor<sub>MPI</sub> | University at Buffalo</h2>
+            The <a href="https://en.wikipedia.org/wiki/Message_Passing_Interface" target="_blank">Message Passing Interface (MPI)</a> is the default standard for high-performance computing (HPC). 
+            While MPI programs are used in important areas of research, such as medical, aerospace, and energy, they are largely unverified, and can deadlock. 
+            However, MPI programmers are already writing their programs with a global view of the system in mind, similar to <a href ="https://en.wikipedia.org/wiki/Choreographic_programming" target="_blank">choreographic programming</a>, a new paradigm for writing distributed systems that ensures deadlock-freedom by design. 
+            Thus, we are creating Chor<sub>MPI</sub>, a choreographic HPC language, based on MPI, to ensure deadlock freedom with minimal interruptions to MPI Programmer's current workflow. 
+
             </br> </br>
 
-            <a href="documents/CLC4MPI_Upstate_PL_2025_Keith_Allen.pdf" target="_blank">Upstate PL 2025 Presentation</a> | 
-            <a href="documents/CLC4MPI_Poster_POPL26SRC_Keith_Allen.pdf" target="_blank">POPL 2026 SRC Poster</a> 
+            This is joint work with <a href="https://akhirsch.science/" target= _blank>Dr. Andrew Hirsch</a> and <a href="https://cse.buffalo.edu/~knepley/" target= _blank>Dr. Matt Knepley</a>. Below are some artifacts from assorted presentations over the life of this project. 
+            </br> </br>
+
+            UpstatePL25 <a href="documents/CLC4MPI_Upstate_PL_2025_Keith_Allen.pdf" target="_blank">Slides PDF</a> | 
+            POPL26 SRC<a href="documents/CLC4MPI_Poster_POPL26SRC_Keith_Allen.pdf" target="_blank">Poster</a> | 
+            PLDI26 Choreographic Programming Workshop
+            <a href="documents/ChorOfMPI_PLDI26ChPr_Keith_Allen.pdf" target="_blank">Slides PDF</a>
+            <a href="https://youtu.be/obyDcLWNCGs?list=PLyrlk8Xaylp658yYHx6cWSE--hN5ufDkp&t=7876" target="_blank">Talk</a> 
           </div>	
     </div>
 
